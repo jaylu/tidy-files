@@ -1,0 +1,22 @@
+{
+  "name": "tidy-files",
+  "version": "1.0.0",
+  "description": "Command line tool to tidy up files, group them by file extension name and put into corresponding folders. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "tidy-files": "./index.js"
+  },
+  "keywords": [
+    "Nodejs",
+    "tidy",
+    "files"
+  ],
+  "author": "Jay Lu",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^1.29.0"
+  }
+}
