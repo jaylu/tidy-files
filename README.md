@@ -1,9 +1,9 @@
 # tidy-files
 
-tidy-files is a command line tool to tidy up the files in folder, orgainized and move them to sub-folders by extension name.
+tidy-files is a command line tool to tidy up the files in folder, orgainized and move them to sub-folders by extension name. I found my Download folder on my mac is messy, this tool help it goes slightly better. 
 
 
-e.g. you have a folder with file like below: 
+e.g. you have a folder with files like below: 
 
 
 	/Download/a.txt    
@@ -35,3 +35,8 @@ It the target file path already existed, it will append the timestamp on the fil
 npm install -g tidy-files
 tidy-files
 ```
+
+## Limitation
+
+* Only test on mac yet, haven't try out in windows
+* As util.promisify is used in source code, only node 8 or greater is supported. 

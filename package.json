@@ -18,5 +18,8 @@
   "license": "ISC",
   "dependencies": {
     "date-fns": "^1.29.0"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }
