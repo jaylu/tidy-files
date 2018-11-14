@@ -29,14 +29,21 @@ It the target file path already existed, it will append the timestamp on the fil
 	/Download/jpg/d.jpg (existing file)
 	/Download/jpg/d-20181114_152311.jpg (new moved file)
 	
+## Limitation
+
+* Only test on mac, haven't try out on windows yet
+* As util.promisify is used in source code, only **node 8** or greater is supported. 
+
 ## Install and run
 
 ```
 npm install -g tidy-files
-tidy-files
+tidy-files 
 ```
 
-## Limitation
+if you get npx installed, try
 
-* Only test on mac yet, haven't try out in windows
-* As util.promisify is used in source code, only node 8 or greater is supported. 
+```
+npx tidy-files
+```
+
