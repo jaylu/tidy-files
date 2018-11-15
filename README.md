@@ -4,10 +4,13 @@ tidy-files is a command line tool to tidy up the files in folder, organized and 
 
 e.g. you have a folder with files like below:  
 
+e.g. you have a folder with files like below:  
+
     /Download/a.txt  
     /Download/b.txt  
     /Download/c.doc  
-    /Download/d.jpg  
+    /Download/d.doc
+    /Download/e.jpg
 
 after running the command
 
@@ -15,21 +18,22 @@ after running the command
 tidy-files
 ```
 
-It will be tidy up to  
+It will be tidy up as below (grouping by file name extension)
 
     /Download/txt/a.txt  
     /Download/txt/b.txt  
     /Download/doc/c.doc  
-    /Download/jpg/d.jpg  
+    /Download/doc/d.doc
+    /Download/jpg/e.jpg
   
-It the target file path already existed, it will append the timestamp on the file name before moving. e.g  
+If the target file path already existed, it will append the timestamp to the file name to avoid overwriting. e.g 
 
-    /Download/jpg/d.jpg (existing file)
-    /Download/jpg/d-20181114_152311.jpg (new moved file)
+    /Download/jpg/e.jpg (existing file)
+    /Download/jpg/e-20181114_152311.jpg (new moved file)
   
 ## Limitation
 
-* Only test on mac, haven't try out on windows yet
+* Only test on MAC, haven't try out on Windows yet
 * As util.promisify is used in source code, only **node 8** or greater is supported.  
 
 ## Install and run
