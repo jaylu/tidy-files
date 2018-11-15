@@ -1,6 +1,6 @@
 {
   "name": "tidy-files",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Command line tool to tidy up files, group them by file extension name and put into corresponding folders. ",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,8 @@
   "author": "Jay Lu",
   "license": "ISC",
   "dependencies": {
-    "date-fns": "^1.29.0"
+    "date-fns": "^1.29.0",
+    "minimist": "^1.2.0"
   },
   "engines": {
     "node": ">=8"

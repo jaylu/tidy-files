@@ -26,7 +26,7 @@ It will be tidy up as below (grouping by file name extension)
     /Download/doc/d.doc
     /Download/jpg/e.jpg
   
-If the target file path already existed, it will append the timestamp to the file name to avoid overwriting. e.g 
+If the target file path already existed, it will append the timestamp to the file name to avoid overwriting. e.g  
 
     /Download/jpg/e.jpg (existing file)
     /Download/jpg/e-20181114_152311.jpg (new moved file)
@@ -47,4 +47,10 @@ if you get npx installed, try
 
 ```shell
 npx tidy-files
+```
+
+if you want to rollback the changes, run  
+
+```shell
+tidy-files --rollback
 ```
