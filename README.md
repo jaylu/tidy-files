@@ -4,8 +4,6 @@ tidy-files is a command line tool to tidy up the files in folder, organized and 
 
 e.g. you have a folder with files like below:  
 
-e.g. you have a folder with files like below:  
-
     /Download/a.txt  
     /Download/b.txt  
     /Download/c.doc  
